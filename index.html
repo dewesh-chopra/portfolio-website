@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+
+    <title>Portfolio Website - Dewesh Chopra</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/9246ff0f0c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- header section -->
+    <div id="header" class="parallax-bg">
+        <div class="container">
+            <nav>
+                <div class="title"><span class="text-purple">D</span>ewesh<span class="text-purple">.</span>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <div>Hi! my name is</div>
+                <div class="text-purple">Dewesh Chopra</div>
+                <div>and I am a </div>
+                <div><span id="typed-output"></span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- about section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/user.png" alt="A portfolio picture of Dewesh Chopra">
+                    <div><a class="btn" href="https://www.linkedin.com/in/dewesh-chopra/" target="_blank">Visit LinkedIn</a></div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"><span class="text-purple">A</span>bout Me<span class="text-purple">.</span>
+                    </h1>
+                    <p class="summary">Experienced Web and Software Developer passionate about crafting innovative,
+                        user-centric experiences. Skilled in HTML, CSS, JavaScript, PHP, React, Flask, Java, and C#.
+                        Collaborative team player committed to delivering high-quality, scalable solutions. Let's
+                        connect and bring your next project to life with exceptional development expertise!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span class="text-purple">Web Development</span><br>
+                                <span>Front-end design using React and Flask</span><br>
+                                <span>Back-end development with Node.js and PHP</span><br>
+                                <span>Database management with SQL Server and MongoDB</span>
+                            </li>
+                            <li>
+                                <span class="text-purple">Application Development</span><br>
+                                <span>Desktop development using Java</span><br>
+                                <span>Cross-platform application development with C#</span><br>
+                                <span>Some minor projects with Python 3</span>
+                            </li>
+                            <li>
+                                <span class="text-purple">Data Science and Machine Learning</span><br>
+                                <span>Worked with Python's Pandas and Matplotlib libraries</span><br>
+                                <span>Intermediate Machine Learning using Scikit-Learn and Tensorflow</span><br>
+                                <span>Knows the basics of Data Analytics and Statistics</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span class="text-purple">Intern at <a href="https://www.salesforce.com/in/" target="_blank">Salesforce</a> (July 2022 to Present)</span><br>
+                                <span>Cloud data management with Salesforce</span><br>
+                                <span>Distributed database design and maintenence</span>
+                            </li>
+                            <li>
+                                <span class="text-purple">Java Developer Intern at <a href="https://letsgrowmore.in/" target="_blank">Let's Grow More</a> (August 2023)</span><br>
+                                <span>Application development using Java</span><br>
+                                <span>Java frameworks like SpringBoot, SWing/AWT, Nimbus and AJAX</span>
+                            </li>
+                            <li>
+                                <span class="text-purple">Machine Learning Trainee at <a href="http://www.saicodingsolution.in/" target="_blank">Sai Coding Solution, Ranchi</a> (May 2022 to June 2022)</span><br>
+                                <span>Python libraries like NumPy, Pandas and Matplotlib</span><br>
+                                <span>Machine Learning using SciPy, Scikit-Learn and Tensorflow</span>
+                            </li>
+                            <li>
+                                <span class="text-purple">Web Designer at <a href="https://naps-website.vercel.app/" target="_blank">News and Publication Society, BIT Mesra</a> (March 2023 to Present)</span><br>
+                                <span>Web interface design using React and Next.js</span><br>
+                                <span>Designing and maintaining web services</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span class="text-purple"><a href="https://www.bitmesra.ac.in/" target="_blank">Birla Institute of technology, Mesra</a> (August 2022 to Present)</span><br>
+                                <span>Master of Computer Application</span><br>
+                                <span>Have GPA of 8.714 and 8.560 in 1<sup>st</sup> and 2<sup>nd</sup> semesters</span>
+                            </li>
+                            <li>
+                                <span class="text-purple"><a href="https://www.vbu.ac.in/login" target="_blank">Vinoba Bhave University, Hazaribag</a> (August 2019 to July 2022)</span><br>
+                                <span>bachelor of Computer Application</span><br>
+                                <span>Graduated with a GPA of 8.36</span>
+                            </li>
+                            <li>
+                                <span class="text-purple"><a href="https://sxshzb.in/" target="_blank">St. Xavier's
+                                        School, Hazaribag</a> (March 2019)</span><br>
+                                <span>All India Senior School Certificate Examination (CBSE)</span><br>
+                                <span>Passed in first division with distinction having 89.2%</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"><span class="text-purple">M</span>y services<span class="text-purple">.</span></h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2 class="text-purple">UI/UX Design</h2>
+                    <p>Passionate UI/UX Designer creating intuitive, visually appealing digital experiences. Expert in
+                        research, prototyping, and enhancing user engagement.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-desktop"></i>
+                    <h2 class="text-purple">Software Development</h2>
+                    <p>Results-driven Software Developer with expertise in coding, problem-solving, and collaborative
+                        development. Committed to delivering efficient and innovative solutions.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2 class="text-purple">Web Development</h2>
+                    <p>Experienced Web Developer proficient in front-end and back-end technologies. Crafting responsive,
+                        user-centric websites for seamless digital experiences.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"><span class="text-purple">M</span>y works<span class="text-purple">.</span></h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/chatroom-app-thumbnail.png">
+                    <div class="layer">
+                        <h3>Chatroom App</h3>
+                        <p>Made using PHP, Bootstrap CSS and MySQL</p>
+                        <a href="https://github.com/dewesh-chopra/Chatroom-App-in-PHP" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/lib-mng-sys-thumbnail.png">
+                    <div class="layer">
+                        <h3>Library Management System</h3>
+                        <p>Made using PHP, Bootstrap CSS and MySQL</p>
+                        <a href="https://github.com/dewesh-chopra/Library-Management-System-in-PHP" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/chatgpt-clone-thumbnail.png">
+                    <div class="layer">
+                        <h3>ChatGPT Clone</h3>
+                        <p>Made using Flask, Tailwind CSS and MongoDB Atlas</p>
+                        <a href="https://github.com/dewesh-chopra/ChatGPT-Clone" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div><a class="btn" href="https://github.com/dewesh-chopra" target="_blank">More at GitHub</a></div>
+        </div>
+    </div>
+
+    <!-- contact section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"><span class="text-purple">C</span>ontact Me<span class="text-purple">.</span>
+                    </h1>
+                    <div class="email">
+                        <p><i class="fa-solid fa-square-envelope"></i>deweshchopra25@gmail.com</p>
+                    </div>
+                    <div class="phone">
+                        <p><i class="fa-solid fa-square-phone"></i>9693842491</p>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/dewesh-chopra/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/dewesh-chopra" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://deweshchopra.blogspot.com/" target="_blank"><i class="fa-brands fa-blogger"></i></a>
+                    </div>
+                    <div><a class="btn" href="docs/dewesh-chopra-resume.pdf" download>Download resume</a></div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter your name ..." required>
+                        <input type="text" name="E-mail" placeholder="Enter your email ..." required>
+                        <textarea name="Message" rows="6" placeholder="Enter your message ..."></textarea>
+                        <button class="btn" type="submit">Submit</button>
+                    </form>
+                    <span id="submit-message"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><i class="fa-regular fa-copyright"></i>Dewesh Chopra</p>
+        </div>
+    </div>
+
+    <!-- For contact form -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzYnfaQ78_pxHiT7idzYCA1yUIocLQMfVG5E51_mzn9DTXa2-JzrPlssG9zyBhLnXnV8g/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('submit-message')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Submitted successfully"
+                setTimeout(function() {
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <!-- For parallax effect -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const parallaxSections = document.querySelectorAll('.parallax-bg');
+
+            window.addEventListener('scroll', function () {
+                parallaxSections.forEach(section => {
+                    if (section.getBoundingClientRect().top <= window.innerHeight / 2) {
+                        section.classList.add('scroll-down');
+                    } else {
+                        section.classList.remove('scroll-down');
+                    }
+
+                    // Remove 'scroll-down' class when section is back at the top
+                    if (section.getBoundingClientRect().top >= 0) {
+                        section.classList.remove('scroll-down');
+                    }
+                });
+            });
+        });
+    </script>
+
+
+    <!-- For creating a sidebar menu -->
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <!-- To hide the active tab and show the clicked tab -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <!-- Using Typed.js for typing animation - repeated -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        let typedInstance;
+
+        function startTypedAnimation() {
+            const options = {
+                strings: ["UI/UX Designer.", "Software Developer.", "Web Developer."],
+                typeSpeed: 50,
+                backSpeed: 30,
+            };
+
+            typedInstance = new Typed("#typed-output", options);
+        }
+
+        function restartTypedAnimation() {
+            setTimeout(() => {
+                typedInstance.destroy();
+
+                // Clear the typed output element
+                const typedElement = document.getElementById("typed-output");
+                typedElement.innerHTML = "";
+
+                // Start a new Typed instance
+                startTypedAnimation();
+
+                restartTypedAnimation();
+            }, 15000);
+        }
+
+        startTypedAnimation();
+
+        restartTypedAnimation();
+    </script>
+</body>
+
+</html>
